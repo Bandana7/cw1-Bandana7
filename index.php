@@ -29,10 +29,6 @@ if(isset($_SESSION["users"])) {
     </div>
   </section>
 
-  <div class="sign-container">
-    <a href="logout.php" class="btn btn-warning">Logout</a>
-  </div>
-
   <section id="hero">
     <h4> Trade-In-Offer!!!</h4>
     <h2>Super Value Offer</h2>

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION["users"])) {
+   header("Location: client.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +25,7 @@
         <li><a href="login.php">Login</a></li>
         <li><a href="registration.php">Register</a></li>
         <li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </section>

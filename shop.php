@@ -17,6 +17,7 @@
         <li><a class="active" href="shop.php">Shop</a></li>
         <li><a href="about.php">About</a></li>
         <li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        
       </ul>
     </div>
   </section>

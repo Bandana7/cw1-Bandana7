@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION["users"])) {
-   header("Location: index.php");
+   header("Location: client.php");
 }
 ?>
 <!DOCTYPE html>
@@ -66,8 +66,10 @@ if (isset($POST["login"])) {
       <input type="submit" value="Login" name="login" class="btn btn-primary">
     </div>
   </form>
+
+  <div> <p>Not registered yet <a href="registration.php">Register Here</a></p></div>
 </div>
-<div> <p>Not registered yet <a href="registration.php">Register Here</a></p></div>
+
   <footer>
     <div class="copyright">
     <p>&copy; 2023 My Website. All rights reserved.</p>
