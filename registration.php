@@ -110,6 +110,8 @@ if (isset($_SESSION["users"])) {
         <div><p>Already Registered <a href="login.php">Login Here</a></p></div>
       </div>
     </div>
+
+    <div> <p>Already registered <a href="login.php">Login Here</a></p></div>
 </body>
 <footer>
     <div class="copyright">

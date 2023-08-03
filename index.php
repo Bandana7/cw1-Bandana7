@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION["users"])) {
+  header("Location: login.php");
+} 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +28,10 @@
       </ul>
     </div>
   </section>
+
+  <div class="sign-container">
+    <a href="logout.php" class="btn btn-warning">Logout</a>
+  </div>
 
   <section id="hero">
     <h4> Trade-In-Offer!!!</h4>

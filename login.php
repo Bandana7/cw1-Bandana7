@@ -33,6 +33,21 @@ if (isset($_SESSION["users"])) {
 if (isset($POST["login"])) {
   $email = $_POST["email"];
   $password = $_POST["password"];
+  require_once "database.php";
+  $sql = "SELECT FROM users WHERE email = '$email'";
+  $result = mysqli_query($conn, $sql);
+  $user = mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+  if ($user) {
+    if(password_verify($password, $user["password"])) {
+      header("Location: index.php");
+      die();
+    }else{
+      echo "<div class='alert alert-danger'> Password does not match.</div>";
+    }
+  }else {
+    echo "<div class='alert alert-danger'> Email does not match.</div>";
+  }
 }
 ?>
   <form action="login.php" method="post">
@@ -50,12 +65,9 @@ if (isset($POST["login"])) {
     <div class="form-btn">
       <input type="submit" value="Login" name="login" class="btn btn-primary">
     </div>
-
-
-  
   </form>
 </div>
-
+<div> <p>Not registered yet <a href="registration.php">Register Here</a></p></div>
   <footer>
     <div class="copyright">
     <p>&copy; 2023 My Website. All rights reserved.</p>
