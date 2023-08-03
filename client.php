@@ -19,23 +19,11 @@ if (isset($_SESSION["users"])) {
     <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="login.php">Login</a></li>
-        <li><a href="registration.php">Register</a></li>
-        <li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
-        <li><a href="logout.php">Logout</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a class="active" href="client.php">Shop</a></li>
+        <li><a href="logout.php">Logout</a></li> 
       </ul>
     </div>
-  </section>
-
-  <section id="hero">
-    <h4> Trade-In-Offer!!!</h4>
-    <h2>Super Value Offer</h2>
-    <h1>On all products</h1>
-    <p>Buy 3 get 1 free.</p>
-    <button class="shop"> Shop Now</button>
   </section>
 
   <section id="features" class="section-p1">
@@ -369,22 +357,9 @@ if (isset($_SESSION["users"])) {
       </div>
     </div>
     
-    <div class="col">
-      <h4> About</h4>
-      <a href="#">About Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Delivery Information </a>
-    </div>
+   
 
-    <div class="col">
-      <h4> My Account</h4>
-      <a href="#">Sign In</a>
-      <a href="#">View Cart</a>
-      <a href="#">Wish List</a>
-      <a href="#">Track My Order </a>
-      <a href="#">Help</a>
-    </div>
+   
 
     <div class="col install">
       <h4>Install App</h4>
