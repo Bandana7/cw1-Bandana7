@@ -13,48 +13,30 @@
     <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a class="active" href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="about.php">About</a></li>
+       
+        <li><a href="login.php">Login</a></li>
+        <li><a href="registration.php">Register</a></li>
+       
       </ul>
     </div>
   </section>
 
-  <section id="page-header" class="blog-header">
-    <h2>#readmore</h2>
-    <p>Learn how to cosplay as a beginner.</p>
+  <section id="hero">
+    <h4> Trade-In-Offer!!!</h4>
+    <h2>Super Value Offer</h2>
+    <h1>On all products</h1>
+    <p>Buy 3 get 1 free.</p>
+    <button class="shop"> Shop Now</button>
   </section>
 
-  <section id="blog">
-    <div class="blog-box">
-        <div class="blog-img">
-            <img src="images/" alt="">
-        </div>
+ 
 
-        <div class="blog-details">
-            <h4>Beginners Journey</h4>
-            <p>The journey to cosplay is unique and quite difficult.Here you can learn to cosplay as a beginner. 
-                The very first thing that you need are products like wigs,lens,makeup and costume.
-                With these you can turn yourself into your fantasy character as you want. For more  complex cosplay other professional
-                items will be needed but for now the mentioned products are enough. Lets begin our journey!</p>
-                <a href="#">CONTINUE READING</a>
-        </div>
-        <h1>13/01</h1>
+  
 
-    </div>
-  </section>
 
-  <section id="pagination" class="section-p1">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
-  </section>
+ 
 
   <footer class="section-p1">
     <div class="col">

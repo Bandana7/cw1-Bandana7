@@ -13,14 +13,12 @@
     <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li><a class="active" href="index.php">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="registration.php">Register</a></li>
+        <li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
       </ul>
     </div>
   </section>

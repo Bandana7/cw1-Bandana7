@@ -471,32 +471,82 @@ footer .copyright{
   line-height: 25px;
 }
 
- /*blog page*/
-#page-header.blog-header{
-  background-image: url(images/blog.jpg); 
-  /*text color change hannu paryo*/
+
+/*about me img */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-#blog{
-  padding: 150px 150px 0 150px;
-}
-
-#blog .blog-box{
+/*admin panel*/
+.container{
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
 }
 
-#blog .blog-img{
-  width: 50%;
-  margin-right: 40px;
+.container .content{
+  text-align: center;
 }
 
-#blog img{
-  width: 100%;
-  height: 
+.container .content h3{
+  font-size: 30px;
+  color: #222;
 }
- 
+
+.container .content h3 span{
+  background-color: blue;
+  color: #E3E6F3;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.container .content h1{
+  font-size: 50px;
+  color: #222;
+} 
+
+.container .content h1 span{
+  color: blue;
+}
+
+.container .content p{
+  font-size: 25Spx;
+  margin-bottom: 20px;
+}
+
+.container .content .btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: #222;
+  color: aliceblue;
+  margin: 0 5px;
+  text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+  background: blue;
+}
+
+
+/*signup form*/
+.sign-container{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: #222 0px 7px 29px 0px;
+}
+
+.from-group{
+  margin-bottom: 30px;
+}
+
   
   /* Style the sections 
   section {
