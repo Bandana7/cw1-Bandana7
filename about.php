@@ -10,7 +10,8 @@
 <body>
   <section id="header">
     <a href="#"><img src="images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
-    <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
+    <h5></h5>
+    <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
         <li><a  href="index.php">Home</a></li>
@@ -22,7 +23,7 @@
   </section>
 
   <section>
-    <h2>About</h2>
+    
     <img src="images/me.jpg" alt="" class="center">
     <p>My name is Bandana, and I am on a thrilling journey to become a cosplayer. 
       I was inspired by seeing cosplayers at a convention and decided to bring my favorite 

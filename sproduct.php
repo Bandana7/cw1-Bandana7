@@ -10,12 +10,12 @@
 <body>
   <section id="header">
     <a href="#"><img src="images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
-    <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
+    <h5></h5>
+    <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
         <li><a href="index.php">Home</a></li>
         <li><a class="active" href="shop.php">Shop</a></li>
-       
         <li><a href="about.php">About</a></li>
       
       </ul>
@@ -27,19 +27,19 @@
         <img src="images/chamber.png" width="100%" id="MainImg" alt="">
         
         <div class="small-img-group">
-            <div class="small-img-col">\
+            <div class="small-img-col">
                 <img src="images/chamber.png" width="100%" class="small-img"  alt="">
             </div>
 
-            <div class="small-img-col">\
+            <div class="small-img-col">
                 <img src="images/loid.png" width="100%" class="small-img"  alt="">
             </div>
 
-            <div class="small-img-col">\
+            <div class="small-img-col">
                 <img src="images/lols.png" width="100%" class="small-img"  alt="">
             </div>
 
-            <div class="small-img-col">\
+            <div class="small-img-col">
                 <img src="images/maid.png" width="100%" class="small-img"  alt="">
             </div>
         </div>

@@ -1,8 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION["user"])) {
-   header("Location: index.php");
-}
+if (isset($_SESSION["user"]))
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,7 +14,8 @@ if (isset($_SESSION["user"])) {
 <body>
   <section id="header">
     <a href="#"><img src="images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
-    <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
+    <h5></h5>
+    <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
         <li><a href="index.php">Home</a></li>

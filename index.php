@@ -7,21 +7,21 @@ if(isset($_SESSION["users"])) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cosplay Workshop</title>
+  <title>Ani-Fit Cosplay Workshop</title>
   <link rel="stylesheet" type="text/css" href="style.css">
- 
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
  
 </head>
 <body>
   <section id="header">
     <a href="#"><img src="images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
-    <a href="#"><img src="images/name.png" height="75px" width="200px" alt="logo" class="name"></a>
+    <h5></h5>
+    <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="name" class="name"></a>
     <div>
       <ul id="navbar">
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>
-       
         <li><a href="login.php">Login</a></li>
         <li><a href="registration.php">Register</a></li>
       </ul>
@@ -35,13 +35,6 @@ if(isset($_SESSION["users"])) {
     <p>Buy 3 get 1 free.</p>
     <button class="shop"> Shop Now</button>
   </section>
-
- 
-
-  
-
-
- 
 
   <footer class="section-p1">
     <div class="col">

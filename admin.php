@@ -8,7 +8,8 @@
  
 </head>
 <body>
-    <div class="container">
+    
+<div class="container">
         
     <div class="content">
         <h3>Hi, <span>admin</span></h3>
@@ -19,5 +20,6 @@
         <a hrref="logout.php" class="btn">logout</a>
     </div>
 </div>
+
 </body>
 </html>
