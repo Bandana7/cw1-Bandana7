@@ -477,7 +477,7 @@ footer .copyright{
   width: 50%;
 }
 
-/*admin panel*/
+/*admin panel
 .container{
   min-height: 100vh;
   display: flex;
@@ -529,7 +529,7 @@ footer .copyright{
 
 .container .content .btn:hover{
   background: blue;
-}
+}*/
 
 
 /*signup form*/
