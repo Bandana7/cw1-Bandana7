@@ -1,7 +1,19 @@
 <?php
 session_start();
-if (isset($_SESSION["user"]))
+if (isset($_SESSION["user"])) {
+    // Redirect the user based on their role_as value
+    if ($_SESSION["role_as"] == 1) {
+        header("Location: ./admin/index.php");
+        die();
+    } else {
+        header("Location: client.php");
+        die();
+    }
+}
 ?>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,28 +41,34 @@ if (isset($_SESSION["user"]))
 <div class="sign-container">
 
 <?php
-        if (isset($_POST["login"])) {
-           $email = $_POST["email"];
-           $password = $_POST["password"];
-            require_once "database.php";
-            $sql = "SELECT * FROM users WHERE email = '$email'";
-            $result = mysqli_query($conn, $sql);
-            $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-            if ($user) {
-                if (password_verify($password, $user["password"])) {
-                    session_start();
-                    $_SESSION["user"] = "yes";
-                    header("Location: client.php");
-                    die();
-                }else{
-                    echo "<div class='alert alert-danger'>Password does not match</div>";
-                }
-            }else{
-                echo "<div class='alert alert-danger'>Email does not match</div>";
-            }
-        }
-        ?>
-  <form action="login.php" method="post">
+if (isset($_POST["login"])) {
+  $email = $_POST["email"];
+  $password = $_POST["password"];
+  require_once "database.php";
+  $sql = "SELECT * FROM users WHERE email = '$email'";
+  $result = mysqli_query($conn, $sql);
+  $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+  if ($user) {
+      if (password_verify($password, $user["password"])) {
+          $_SESSION["user"] = "yes";
+          $_SESSION["role_as"] = $user["role_as"]; // Assuming "role_as" is a field in the database
+          // Redirect the user based on their role_as value
+          if ($_SESSION["role_as"] == 1) {
+              header("Location: ./admin/index.php");
+          } else {
+              header("Location: client.php");
+          }
+          exit();
+      } else {
+          echo "<div class='alert alert-danger'>Password does not match</div>";
+      }
+  } else {
+      echo "<div class='alert alert-danger'>Email does not match</div>";
+  }
+}
+?>
+
+<form action="login.php" method="post">
     
   <div class="form-group">
       <label for="email">Email:</label>
@@ -77,3 +95,7 @@ if (isset($_SESSION["user"]))
   </footer>
 </body>
 </html>
+
+
+
+
