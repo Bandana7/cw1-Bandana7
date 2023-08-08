@@ -1,10 +1,11 @@
 <?php
+
 session_start();
 
 if (isset($_POST["login"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
-    require_once "database.php";
+    require_once "secure/database.php";
 
     $sql = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
@@ -15,7 +16,7 @@ if (isset($_POST["login"])) {
         $_SESSION["role_as"] = $user["role_as"];
 
         if ($user["role_as"] == 1) {
-            header("Location: admin.php");
+            header("Location: secure/admin.php");
             exit();
         } else {
             header("Location: client.php");
@@ -31,10 +32,10 @@ if (isset($_POST["login"])) {
 <html>
 <head>
   <title>Login Form</title>
-  //bootstrap 
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  //Fontawesome icon
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 

@@ -1,9 +1,10 @@
 <?php
+
 session_start();
 
 // Check if the user is logged in and is an admin (role_as = 1)
 if (!isset($_SESSION["user"]) || $_SESSION["role_as"] != 1) {
-    header("Location: login.php"); // Redirect to login page if not an admin
+    header("Location: ../login.php"); // Redirect to login page if not an admin
     exit();
 }
 
@@ -37,13 +38,13 @@ if (isset($_POST["addCategory"])) {
     $categoryName = $_POST["categoryName"];
     $categoryDescription = $_POST["categoryDescription"];
     
-    // Upload and handle category image (validate and sanitize file upload)
-    $categoryImage = "image"; // Set a default value
+    // Upload and handle category image
+    $categoryImage = "image";
     if (isset($_FILES["categoryImage"]) && $_FILES["categoryImage"]["error"] === 0) {
         // Handle file upload here and set $categoryImage accordingly
     }
 
-    // Add the category to the database (make sure to validate and sanitize input)
+    // Add the category to the database
     $insertCategorySQL = "INSERT INTO category (name, description, image) VALUES ('$categoryName', '$categoryDescription', '$categoryImage')";
     mysqli_query($conn, $insertCategorySQL);
 }
@@ -68,7 +69,7 @@ $resultCategories = mysqli_query($conn, $selectCategoriesSQL);
 <html>
 <head>
 <title>Admin Page</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -146,14 +147,14 @@ $resultCategories = mysqli_query($conn, $selectCategoriesSQL);
 <body>
 
 <section id="header">
-    <a href="#"><img src="images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
+    <a href="#"><img src="../images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
     <h5></h5>
-    <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="name" class="name"></a>
+    <a href="#"><img src="../images/nam.png" height="75px" width="250px" alt="name" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="logout.php">Logout</a></li>
-        <li><a href="client.php">Shop</a></li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="../logout.php">Logout</a></li>
+        <li><a href="../client.php">Shop</a></li>
       </ul>
     </div>
   </section>
