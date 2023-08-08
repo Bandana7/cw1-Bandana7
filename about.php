@@ -3,12 +3,12 @@
 <head>
   <title>Cosplay Workshop</title>
   <link rel="stylesheet" type="text/css" href="style.css">
- 
+ //Fontawesome icons
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
- 
 </head>
 <body>
   <section id="header">
+    //navbar style
     <a href="#"><img src="images/logo.png" height="75px" width="75px" alt="logo" class="logo"></a>
     <h5></h5>
     <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="logo" class="name"></a>

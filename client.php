@@ -9,7 +9,7 @@ if (isset($_SESSION["users"])) {
 <head>
   <title>Cosplay Workshop</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  
+  //Fontawesome icon
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
  
 </head>
@@ -26,7 +26,7 @@ if (isset($_SESSION["users"])) {
       </ul>
     </div>
   </section>
-
+//feature box created
   <section id="features" class="section-p1">
     <div class="f-box">
       <img src="images/delivery.jpg" height="100px" width="100px">

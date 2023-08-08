@@ -10,7 +10,7 @@ if(isset($_SESSION["users"])) {
 <head>
   <title>Ani-Fit Cosplay Workshop</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  
+  //Fontawesome icon
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
  
 </head>
