@@ -377,6 +377,8 @@ if (isset($_SESSION["users"])) {
     <div class="copyright">
       <p>&copy; 2023 My Website. All rights reserved.</p>
     </div>
+
+    
     
   </footer>
 <script src="script.js"></script>
