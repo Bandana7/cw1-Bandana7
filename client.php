@@ -1,5 +1,17 @@
 <?php
 session_start();
+// Check for directory hopping
+if (__FILE__ != realpath($_SERVER['SCRIPT_FILENAME'])) {
+  // Redirect to login page
+  header("Location: login.php");
+  exit();
+}
+
+// Check if the user is logged in and is an admin (role_as = 0)
+if (!isset($_SESSION["user"]) || $_SESSION["role_as"] != 0) {
+  header("Location: login.php");
+  exit();
+}
 if (isset($_SESSION["users"])) {
    header("Location: client.php");
 }
@@ -9,7 +21,7 @@ if (isset($_SESSION["users"])) {
 <head>
   <title>Cosplay Workshop</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  //Fontawesome icon
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
  
 </head>
@@ -20,13 +32,12 @@ if (isset($_SESSION["users"])) {
     <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a href="index.php">Home</a></li>
-        <li><a class="active" href="client.php">Shop</a></li>
+      <li><a href="login.php">Admin</a></li> 
         <li><a href="logout.php">Logout</a></li> 
       </ul>
     </div>
   </section>
-//feature box created
+
   <section id="features" class="section-p1">
     <div class="f-box">
       <img src="images/delivery.jpg" height="100px" width="100px">

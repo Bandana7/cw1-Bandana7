@@ -2,6 +2,14 @@
 
 session_start();
 
+// Check for directory hopping
+if (__FILE__ != realpath($_SERVER['SCRIPT_FILENAME'])) {
+    // Redirect to login page
+    header("Location: ../login.php");
+    exit();
+}
+
+
 // Check if the user is logged in and is an admin (role_as = 1)
 if (!isset($_SESSION["user"]) || $_SESSION["role_as"] != 1) {
     header("Location: ../login.php"); // Redirect to login page if not an admin
@@ -152,7 +160,7 @@ $resultCategories = mysqli_query($conn, $selectCategoriesSQL);
     <a href="#"><img src="../images/nam.png" height="75px" width="250px" alt="name" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a href="../index.php">Home</a></li>
+        
         <li><a href="../logout.php">Logout</a></li>
         <li><a href="../client.php">Shop</a></li>
       </ul>

@@ -46,9 +46,9 @@ if (isset($_POST["login"])) {
     <a href="#"><img src="images/nam.png" height="75px" width="250px" alt="logo" class="name"></a>
     <div>
       <ul id="navbar">
-        <li><a href="index.php">Home</a></li>
+        
         <li><a class="active" href="login.php">Login</a></li>
-        <li><a href="registration.php">Register</a></li> 
+       
       </ul>
     </div>
   </section>
